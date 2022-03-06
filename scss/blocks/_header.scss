@@ -1,0 +1,143 @@
+.info {
+   display:flex; 
+   padding-top: 65px;
+   justify-content: space-between;
+   margin-bottom: 92px;
+   align-items: center;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+}
+
+.navbar__list {
+   display: flex;
+   list-style: none;
+   margin-right: 50px;
+}
+
+.navbar__item{
+   padding: 8px;
+}
+
+.navbar__item--active {
+      margin: 0 20px;
+      padding: 8px;
+}
+
+.navbar__link--active {
+   text-decoration-line:line-through ;
+   
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 23px;
+   color: #fff;
+}
+
+.navbar__link {
+   text-decoration: none;
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 23px;
+   color: #222;
+
+   &:hover {
+      color: #fff;
+      text-decoration-line:line-through ;
+   }
+   
+}
+
+.navbar__language {
+   display: flex;
+   border: 1px solid white;
+   list-style: none;
+   border-radius: 25px;
+   padding: 6px 10px;
+
+}
+
+.info__language__item--active {
+      margin-right: 10px;
+      margin-left: 10px;
+}
+
+.info__language__link {
+   text-decoration: none;
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 23px;
+   color: #222;
+
+
+   &:hover {
+      color: #fff;
+   }
+}
+
+.info__language__link--active {
+   text-decoration: none;
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 23px;
+   color: #fff;
+
+}
+
+.info__hamburg-btn {
+   display: none;
+   position: absolute;
+   top: 80px;
+   right: 150px;
+}
+
+.info__hamburg {
+   margin-bottom: 5px;
+   width: 25px;
+   height: 1px;
+   border: 2px solid white;
+   border-radius: 10px;
+   background-color: #fff;
+
+}
+
+.info__hamburg--active {
+   width: 25px;
+   height: 1px;
+   border: 2px solid white;
+   border-radius: 10px;
+   background-color: #fff;
+}
+
+
+
+@media only screen and (max-width:426px) {
+
+      .info {
+         margin-bottom: 30px;
+         padding-top: 25px;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .info__image {
+         width: 71px;
+         height: 29px;
+      }
+
+      .navbar {
+         display: none;
+      }
+
+      .info__hamburg-btn {
+         display:block;
+         top: 30px;
+         right: 20px;
+      }
+
+}

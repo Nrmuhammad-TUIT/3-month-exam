@@ -1,0 +1,251 @@
+.inner {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+}
+
+.form {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   margin-bottom: 100px;
+}
+
+.form-hero {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.form__label {
+   display: flex;
+   flex-direction: column;
+   margin-right: 50px;
+}
+
+.form__label--active {
+   display: flex;
+   flex-direction: column;
+   margin-right: 30px;
+}
+
+.form__span {
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 23px;
+   color: #fff;
+}
+
+.form-hero__input {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding: 14px 25px;
+   width: 393px;
+   border: 1px solid white;
+   border-radius: 25px;
+   background-color: #444;
+}
+
+.form-hero__input--element {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding: 14px 25px;
+   width: 288px;
+   border: 1px solid white;
+   border-radius: 25px;
+   background-color: #444;
+}
+
+.form-hero__input--hero {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding: 14px 25px;
+   width: 338px;
+   border: 1px solid white;
+   border-radius: 25px;
+   background-color: #444;
+}
+
+
+.form__select {
+   background-color: #444;
+   margin-bottom: 20px;
+   padding: 14px 25px;
+   width: 287px;
+   border-radius: 25px;
+   color: #fff;
+}
+
+.form__select--active {
+   background-color: #444;
+   margin-bottom: 20px;
+   padding: 14px 25px;
+   width: 394px;
+   border-radius: 25px;
+   color: #fff;
+}
+
+.form__textarea {
+   margin-top: 10px;
+   padding: 15px;
+   max-width: 711px;
+   border: 1px solid white;
+   border-radius: 25px;
+   background-color: #444;
+   margin-bottom: 30px;
+   color: #fff;
+}
+
+.form__btn {
+   display: inline-block;
+   padding: 10px 15px;
+   max-width: 130px;
+   background-color: #0040DD;
+   color: #fff;
+   border-radius: 10px;
+   
+   
+   &::after {
+      content:  "";
+      background-image: url(../../images/Frame.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 22px;
+      top: 0px;
+      right:0px;
+   }
+}
+
+.inner__info {
+   max-width: 440px;
+}
+
+.inner__info__title {
+   margin-bottom: 30px;
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 40px;
+   color: #fff;
+}
+
+.inner__info__text {
+   font-family: "Manrope" , "Arial" , sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 26px;
+   color: #fff;
+}
+
+
+@media only screen and (max-width:426px) {
+   
+   .inner {
+      
+      flex-direction: column;
+   }
+   
+   
+   .form {
+      margin-bottom: 0;
+   }
+   
+   .form-hero {
+      flex-direction: column;
+      margin-right: 0;
+   }
+   
+   .inner__info {
+      max-width: 340px;
+      margin-bottom: 40px;
+   }
+   
+   .inner__info__title {
+      font-size: 32px;
+      line-height: 40px;
+   }
+   
+   .inner__info__text {
+      opacity: 0.6;
+      font-size: 16px;
+      line-height: 26px;
+   }
+   
+   
+   .form-hero__input {
+      margin-right: 0;
+      margin-bottom: 30px;
+      max-width: 100%;
+   }
+   
+   
+   .form-hero__input--element {
+      
+      max-width:100%;
+   }
+   
+   .form-hero__input--hero {
+      max-width: 100%;
+   }
+   
+   
+   
+   .form__select--active {
+      max-width: 100%;
+   }
+   
+   
+   .form__label {
+      margin-right: 0;
+   }
+   
+   .form__label--active {
+      display: none;
+      margin-bottom: 30px;
+   }
+   
+   .form__select {
+      margin-bottom: 30px;
+      max-width: 100%;
+   }
+   
+   .form__textarea {
+      display: none;
+   }
+   
+   .form__btn {
+      max-width: 343px;
+   }
+   
+}
+
+@media only screen and (max-width:376px) {
+   
+   .inner__info__title {
+      font-size: 30px;
+      line-height: 38px;
+   }
+   
+   .inner__info__text {
+      opacity: 0.6;
+      font-size: 14px;
+      line-height: 24px;
+   }
+   
+}
+
+@media only screen and (max-width:321px) {
+   
+   .inner__info__title {
+      font-size: 28px;
+      line-height: 36px;
+   }
+   
+   .inner__info__text {
+      opacity: 0.6;
+      font-size: 14px;
+      line-height: 24px;
+   }
+   
+}
